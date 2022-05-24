@@ -18,7 +18,7 @@ build_script:
 
 environment:
   access_token:
-    secure: +pYQW4kpttBt/u2QA22oUuP7abPsjAlOne6Y25n3MyVeFHPGwEV/k6ICgaP9QEeY
+    secure: oUzdVnBXBt1EPfQclYxgZZSlxl+r1u2fbpOPN5IfxIlBfP2/LIAQ5iUjYFZUzkrS
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
