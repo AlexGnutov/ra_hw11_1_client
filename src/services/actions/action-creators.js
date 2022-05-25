@@ -103,7 +103,7 @@ export const deleteServiceOk = () => ({
 export const fetchServices = async (dispatch) => {
     dispatch(fetchServicesRequest());
     try {
-        console.log('do fetch');
+        //console.log('do fetch');
         const response = await fetch(`${process.env.REACT_APP_API_URL}api/services`);
         if (!response.ok) {
             dispatch(fetchServicesFailure(response.statusText));
@@ -119,7 +119,7 @@ export const fetchServices = async (dispatch) => {
 export const loadService = async (dispatch, id) => {
     dispatch(loadServiceReq());
     try {
-        console.log('do load', id);
+        //console.log('do load', id);
         const response = await fetch(`${process.env.REACT_APP_API_URL}api/services/${id}`);
         if (!response.ok) {
             dispatch(loadServiceFail(response.statusText));
@@ -135,7 +135,7 @@ export const loadService = async (dispatch, id) => {
 export const saveService = async (dispatch, data, cb) => {
     dispatch(saveServiceReq());
     try {
-        console.log('do post');
+        //console.log('do post');
         const response = await fetch(`${process.env.REACT_APP_API_URL}api/services`, {
             method: 'POST',
             body: JSON.stringify({...data}),
@@ -158,7 +158,7 @@ export const deleteService = async (dispatch, id) => {
     dispatch(deleteServiceReq(id));
 
     try {
-        console.log('do delete');
+        //console.log('do delete');
         const response = await fetch(`${process.env.REACT_APP_API_URL}api/services/${id}`, {
             method: 'DELETE',
         });
