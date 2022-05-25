@@ -22,7 +22,7 @@ function ServiceItem(props) {
 
     const deleteHandler = (id) => {
         setDeleting(true);
-        deleteService(dispatch, id);
+        deleteService(dispatch, id); // call AC and dispatch from it
     }
 
     return (

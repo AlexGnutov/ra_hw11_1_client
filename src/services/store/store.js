@@ -1,10 +1,10 @@
 import {combineReducers, createStore} from "redux";
-import servicesListReducer from "../reducers/services-list-reducer";
-import editPageReducer from "../reducers/edit-page-reducer";
+import serviceListReducer from "../reducers/service-list-reducer";
+import editFormReducer from "../reducers/edit-form-reducer";
 
 const reducer = combineReducers({
-    servicesList: servicesListReducer,
-    editPage: editPageReducer,
+    servicesList: serviceListReducer,
+    editForm: editFormReducer,
 });
 
 const store = createStore(reducer);
